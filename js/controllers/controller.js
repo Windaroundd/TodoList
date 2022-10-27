@@ -6,7 +6,8 @@ export let renderTaskToUl = (taskList) => {
     if (item.status == "pending") {
       contentPending += `<li> ${capitalizeFirstLetter(`${item.content}`)}
         <div>
-        <a class="buttons" onclick="deleteTask(${index})" href="#"><i class="fa fa-trash-alt fa-lg remove"></i>
+        <a class="buttons" onclick="deleteTask(${index})" href="#">
+        <i class="fa fa-trash-alt fa-lg remove"></i>
         </a>
         <a class="buttons ${
           item.status
