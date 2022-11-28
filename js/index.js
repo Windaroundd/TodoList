@@ -32,6 +32,7 @@ let addNewTask = () => {
       contentTaskList.push(newTask);
       renderTaskToUl(contentTaskList);
       saveLocalStorage();
+      document.getElementById("newTask").value = "";
     }
   });
 };
